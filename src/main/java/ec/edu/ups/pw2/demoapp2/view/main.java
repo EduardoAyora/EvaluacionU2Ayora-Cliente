@@ -103,7 +103,7 @@ public class main {
 		JButton btnBuscarPorModelo = new JButton("Buscar");
 		btnBuscarPorModelo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String modelo = txtMarca.getText();
+				String modelo = txtModelo.getText();
 				List<String> vehiculos = ventanaVehiculos.buscarPorModelo(modelo);
 				actualizarJListVehiculos(vehiculos);
 			}
@@ -124,7 +124,7 @@ public class main {
 		JButton btnBuscarPorAnio = new JButton("Buscar");
 		btnBuscarPorAnio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String anio = txtMarca.getText();
+				String anio = txtAnio.getText();
 				List<String> vehiculos = ventanaVehiculos.buscarPorAnio(anio);
 				actualizarJListVehiculos(vehiculos);
 			}
