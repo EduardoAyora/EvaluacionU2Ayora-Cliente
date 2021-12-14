@@ -2,11 +2,6 @@ package ec.edu.ups.pw2.demoapp2.model;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 public class Vehiculo implements Serializable {
 
 	private static final long serialVersionUID = 1L;

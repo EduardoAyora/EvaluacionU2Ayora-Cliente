@@ -15,7 +15,7 @@ import javax.swing.JList;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class inicio {
+public class main {
 
 	private VentanaVehiculos ventanaVehiculos;
 	private DefaultListModel<String> vehiculosEnLista;
@@ -32,7 +32,7 @@ public class inicio {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					inicio window = new inicio();
+					main window = new main();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -44,13 +44,14 @@ public class inicio {
 	/**
 	 * Create the application.
 	 */
-	public inicio() {
+	public main() {
 		try {
 			ventanaVehiculos = new VentanaVehiculos();
 			ventanaVehiculos.conectar();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		vehiculosEnLista = new DefaultListModel<String>();
 		initialize();
 	}
 
@@ -134,7 +135,7 @@ public class inicio {
 		frame.getContentPane().add(panel_1, BorderLayout.CENTER);
 		panel_1.setLayout(new GridLayout(1, 0, 0, 0));
 		
-		JList list = new JList();
+		JList<String> list = new JList<String>(vehiculosEnLista);
 		panel_1.add(list);
 	}
 	

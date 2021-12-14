@@ -8,12 +8,7 @@ import java.util.List;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
-import ec.edu.ups.pw2.demoapp2.ON.CalculadoraONRemote;
-import ec.edu.ups.pw2.demoapp2.ON.FacturacionONRemote;
-import ec.edu.ups.pw2.demoapp2.ON.PersonaONRemote;
 import ec.edu.ups.pw2.demoapp2.ON.VehiculoONRemote;
-import ec.edu.ups.pw2.demoapp2.model.Factura;
-import ec.edu.ups.pw2.demoapp2.model.Persona;
 
 public class VentanaVehiculos {
 	
